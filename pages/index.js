@@ -28,17 +28,17 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Coming Soon</h1>
-        {/* <p className={styles.discription}>
-          From automation of music processes to creating
-          <br /> an engaged and driven culture.
-        </p> */}
+        <p className={styles.description}>
+          From automation of music processes to creating an engaged and driven
+          music community.
+        </p>
 
         {/* <div>
           <input type="email" placeholder="Please enter your email address" />
           <button type="button">Notify Me</button>
-        </div>
+        </div> */}
 
-        <p>-_ Notify me when the site is launched _-</p> */}
+        {/* <p>-_ Notify me when the site is launched _-</p> */}
       </main>
 
       {/* <footer className={styles.footer}>
