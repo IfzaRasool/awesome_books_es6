@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Neue Plak';
+    src: local('Neue Plak Regular'), local('Neue-Plak-Regular'),
+        url('NeuePlak-Regular.woff2') format('woff2'),
+        url('NeuePlak-Regular.woff') format('woff'),
+        url('NeuePlak-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
