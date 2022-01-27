@@ -7,6 +7,9 @@ $trans: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 .footer_wrapper {
   background: black;
   padding: 68px 56px 0 56px;
+  @media screen and (max-width: 768px){
+    padding: 24px;
+  }
 }
 
 // socials
@@ -256,6 +259,13 @@ $trans: cubic-bezier(0.785, 0.135, 0.15, 0.86);
   align-items: center;
   justify-content: space-between;
   display: flex;
+
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    margin: 0;
+  }
   a {
     &:last-child {
       border-right-width: 1px;
@@ -325,6 +335,16 @@ $trans: cubic-bezier(0.785, 0.135, 0.15, 0.86);
         stop-color: #f7f7f7;
       }
     }
+
+    @media screen and (max-width: 768px) {
+      border-right-width: 1px;
+    }
+  }
+}
+
+.callout{
+  @media screen and (max-width: 768px) {
+    margin: 0;
   }
 }
 
