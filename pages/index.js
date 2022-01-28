@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Footer from '../components/footer/footer';
 import styles from '../styles/home.module.scss';
+import Socials from "../sections/socials/socials";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       {/* header */}
 
       <main className={styles.main}>main</main>
+
+      {/*  socials */}
+        <Socials />
 
       {/* footer */}
       <Footer />
