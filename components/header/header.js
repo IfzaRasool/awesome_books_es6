@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import {nav_links} from "./data";
 
-import {header, home_btn, nav} from './header.module.scss';
+import {header, home_btn, nav, righter} from './header.module.scss';
 import Button from "../button/button";
 
 export default function Header(){
@@ -16,18 +16,22 @@ export default function Header(){
             </Link>
 
             <nav className={nav}>
-                {
-                    nav_links.map((link, index) => (
-                        <Link key={index} href={`/${link}`}>
-                            <a>
-                                <span>{link}</span>
-                            </a>
-                        </Link>
-                    ))
-                }
+                <div>
+                    {
+                        nav_links.map((link, index) => (
+                            <Link key={index} href={`/${link}`}>
+                                <a>
+                                    <span>{link}</span>
+                                </a>
+                            </Link>
+                        ))
+                    }
+                </div>
             </nav>
 
-            <Button color="primary" />
+            <div className={righter}>
+                <Button color="primary" />
+            </div>
         </header>
     )
 }
