@@ -1,0 +1,91 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 48px;
+  z-index: 22;
+  right: 0;
+  left: 0;
+  overflow-x: hidden;
+  position: fixed;
+  //mix-blend-mode: difference;
+  contain: layout;
+  pointer-events: all;
+  border-bottom: 1px solid #4d4d4d6e;
+  background: black;
+
+  @media screen and (max-width: 768px) {
+    padding: 24px;
+  }
+}
+
+.home_btn{
+  opacity: 1;
+  transition: opacity .4s ease 1s;
+  pointer-events: all;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a{
+    width: 100%;
+    padding: 5px 0 8px;
+    transition: opacity .2s ease-out 1.2s, transform .2s ease-out 1.2s;
+    margin: 0 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-flex;
+    border-radius: 0;
+    contain: layout;
+    justify-content: center;
+    align-items: center;
+
+
+    span{
+      color: #fff;
+      position: relative;
+      padding: 8px;
+      background: none;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: 'NeuePlak-ExtendedBold', sans-serif;
+      text-transform: uppercase;
+      transition: background-color .2s;
+
+      &::after{
+        content: '';
+        background-color: #fff;
+        width: 0;
+        height: 1px;
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+        transition: transform .2s ease-out;
+      }
+
+      @media screen and (max-width: 768px){
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      @media screen and (max-width: 414px){
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &:hover{
+      span{
+        &::after{
+          transition: transform .2s ease-out;
+          transform: scaleY(2);
+          width: calc(100% - 16px);
+        }
+      }
+    }
+  }
+}
