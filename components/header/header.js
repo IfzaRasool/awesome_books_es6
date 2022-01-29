@@ -11,7 +11,7 @@ export default function Header(){
         <header className={header}>
             <Link href="/">
                 <a className={home_btn}>
-                    <Image src="/logo_head.svg" width={43} height={56} alt="logo" />
+                    <Image src="/logo_traced.svg" width={43} height={56} alt="logo" />
                 </a>
             </Link>
 

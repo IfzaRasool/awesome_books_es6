@@ -3,6 +3,7 @@ import Footer from '../components/footer/footer';
 import styles from '../styles/home.module.scss';
 import Socials from "../sections/socials/socials";
 import Header from "../components/header/header";
+import Hero from "../sections/hero/hero";
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
       {/* header */}
         <Header />
 
-      <main className={styles.main}>main</main>
+      <main className={styles.main}>
+          <Hero />
+      </main>
 
       {/*  socials */}
         <Socials />
