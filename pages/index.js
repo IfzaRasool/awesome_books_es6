@@ -4,6 +4,7 @@ import styles from '../styles/home.module.scss';
 import Socials from "../sections/socials/socials";
 import Header from "../components/header/header";
 import Hero from "../sections/hero/hero";
+import Mail from "../sections/mailing/mail";
 
 export default function Home() {
   return (
@@ -18,7 +19,6 @@ export default function Home() {
         <Header />
 
       <main className={styles.main}>
-          <Hero />
       </main>
 
       {/*  socials */}
