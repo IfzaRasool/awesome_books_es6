@@ -3,6 +3,7 @@ import Footer from '../components/footer/footer';
 import styles from '../styles/home.module.scss';
 import Socials from "../sections/socials/socials";
 import Header from "../components/header/header";
+import Services from "../sections/services/services";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Header />
 
       <main className={styles.main}>
+          <Services />
       </main>
 
       {/*  socials */}
