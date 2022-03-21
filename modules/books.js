@@ -1,7 +1,3 @@
-// const bookDiv = document.querySelector('.list_books > ul');
-// let bookList = JSON.parse(localStorage.getItem('book_info')) || [];
-// const form = document.querySelector('.add-book-form');
-
 // read books on UI
 export const readBook = (books, bookDiv) => {
   bookDiv.innerHTML = '';
